@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>二班班级网 · 主页</title>
+	<style>
+        /* 添加响应式样式 */
+        @media (max-width: 767px) {
+            body {
+                font-size: 14px;
+            }
+
+            header {
+                padding: 10px;
+            }
+
+            nav {
+                padding: 5px;
+            }
+
+            nav li {
+                margin-right: 10px;
+            }
+
+            section {
+                margin: 10px;
+                padding: 10px;
+            }
+
+            footer {
+                padding: 5px;
+            }
+        }
+        
+        html, body {
+	        height: 100%;
+        }
+
+        body {
+	        display: flex;
+	        flex-direction: column;
+        }
+
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+		}
+
+		h1 {
+			margin: 0;
+		}
+
+		nav {
+			background-color: #666;
+			color: #fff;
+			padding: 10px;
+		}
+        nav ul {
+        	display: flex;
+        	justify-content: center;
+	        list-style: none;
+	        margin: 0;
+	        padding: 0;
+        }
+
+        nav li {
+        	margin-right: 20px;
+        }
+
+        a {
+        	color: #fff;
+        	text-decoration: none;
+	        padding: 5px;
+        }
+
+        a:hover {
+	        background-color: #999;
+        }
+
+		section {
+			margin: 20px;
+			padding: 20px;
+			background-color: #fff;
+			box-shadow: 0 0 5px rgba(0,0,0,0.3);
+            transition: transform 1.0s, opacity 2.0s;
+		}
+
+        .hover {
+        background-color: #999;
+        }
+
+		footer {
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			text-align: center;
+            margin-top: auto;
+		}
+        /* 添加动画效果 */
+        @keyframes slideInUp {
+	        from {
+		        transform: translateY(100%);
+		        opacity: 0;
+	        }
+	        to {
+		        transform: translateY(0);
+		        opacity: 1;
+	        }
+        }
+
+        /* 模块进入视口时触发动画 */
+        section:not(.animate) {
+	        transform: translateY(100%);
+	        opacity: 0;
+	        visibility: hidden;
+        }
+
+        section.animate {
+	        transform: translateY(0);
+	        opacity: 1;
+	        visibility: visible;
+	        animation: slideInUp 1s ease-in-out;
+        }
+	</style>
+</head>
+<body data-bm="73">
+	<header data-bm="69">
+		<h1>二班班级网 · 主页</h1>
+	</header>
+	<nav data-bm="70">
+		<ul>
+			<li><a class="hover">首页</a></li>
+			<li><a href="yqlj.html" data-bm="74">友情链接</a></li>
+		</ul>
+	</nav>
+	<section data-bm="71" class="animate">
+		<h2>欢迎来到班级网站</h2>
+		<p>这是一个属于二班的班级网站，做的好像有点太匆忙了，有些东西都没做出来。</p>
+		<p>额，只做了主页的一点点内容和友情链接的《中国新闻网》，别的都没做。</p>
+        <p>还要做什么样子再来和我说吧。</p>
+        <p>休息去喽。</p>
+	</section>
+	<footer data-bm="72">
+		<p>© 班级网站 2023</p>
+	</footer>
+
+
+</body>
+</html>

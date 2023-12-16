@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>班级网站</title>
+	<style>
+        html, body {
+	        height: 100%;
+        }
+
+        body {
+	        display: flex;
+	        flex-direction: column;
+        }
+
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+		}
+
+		h1 {
+			margin: 0;
+		}
+
+		nav {
+			background-color: #666;
+			color: #fff;
+			padding: 10px;
+		}
+        nav ul {
+        	display: flex;
+        	justify-content: center;
+	        list-style: none;
+	        margin: 0;
+	        padding: 0;
+        }
+
+        nav li {
+        	margin-right: 20px;
+        }
+
+        nav a {
+        	color: #fff;
+        	text-decoration: none;
+	        padding: 5px;
+        }
+
+        p a {
+        	color: #fff;
+        	text-decoration: none;
+	        padding: 5px;
+            background-color: #000;
+        }
+
+        .hover {
+        background-color: #999;
+        }
+
+        a:hover {
+	        background-color: #999;
+        }
+
+		section {
+			margin: 20px;
+			padding: 20px;
+			background-color: #fff;
+			box-shadow: 0 0 5px rgba(0,0,0,0.3);
+            transition: transform 1.0s, opacity 2.0s;
+		}
+
+		footer {
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			text-align: center;
+            margin-top: auto;
+		}
+                /* 添加动画效果 */
+                @keyframes slideInUp {
+	        from {
+		        transform: translateY(100%);
+		        opacity: 0;
+	        }
+	        to {
+		        transform: translateY(0);
+		        opacity: 1;
+	        }
+        }
+
+        /* 模块进入视口时触发动画 */
+        section:not(.animate) {
+	        transform: translateY(100%);
+	        opacity: 0;
+	        visibility: hidden;
+        }
+
+        section.animate {
+	        transform: translateY(0);
+	        opacity: 1;
+	        visibility: visible;
+	        animation: slideInUp 1s ease-in-out;
+        }
+	</style>
+</head>
+<body data-bm="73">
+	<header data-bm="69">
+		<h1>二班班级网站</h1>
+	</header>
+	<nav data-bm="70">
+		<ul>
+			<li><a href="index.html">首页</a></li>
+			<li><a class="hover">友情链接</a></li>
+		</ul>
+	</nav>
+	<section data-bm="71" class="animate">
+		<h2>这里是友情链接</h2>
+		<p><a href="https://www.chinanews.com.cn/">中国新闻网</a>(多看点新闻吧孩子)</p>
+	</section>
+	<footer data-bm="72">
+		<p>© 班级网站 2023</p>
+	</footer>
+
+
+</body></html>
